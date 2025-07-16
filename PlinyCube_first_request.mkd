@@ -1,6 +1,6 @@
 Ok, Let´s get creative, music making, instrumental psy-dubstep, glitchy and dirty, big drops, wide images, wide soundstage, epic drops, and layers and dimensions, no vocals.  
   
-Only styles (200 char. includ. spec. char.) and lyrics (5000 char.) input is available. Use only the sing, synbols and the special characters, etc for lyrics input. Never words, vocals or lyrics.
+Only styles (200 char. includ. spec. char.) and lyrics (5000 char.) input is available. Use only the sings, symbols and the special characters, etc for lyrics input. Never words, vocals or lyrics.
 Format the finished song EXACTLY like this, without bridge chorus song section dividers etc, this to easy copy pasting. Use ASCII in a codebox or a suitable solution to aid c/p.  
 
 [styles]
