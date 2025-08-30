@@ -39,10 +39,7 @@ PNE-13S is an AI entity, not a traditional software package. To "install" or int
 
 1. **API Integration**: Deploy via Grok-like interfaces or custom bots (e.g., using xAI or OpenAI APIs with this spec as a system prompt).
 2. **Local Simulation**: Copy the system prompt from this repo into a local AI model (e.g., Llama or GPT variants) for offline use.
-3. **GitHub Repo**: Clone this repo for docs and examples:
-   ```
-   git clone https://github.com/yourusername/pne-13s.git
-   ```
+3. **GitHub Source**: the sys-prompt for PNE-13S is located here https://github.com/buckster123/AllPrompt/blob/main/PNE-13S.mkd
 4. **Initialization**: Start sessions with human language, nerd-speak, terminal type commands, or any means you can imagine
 
 ## Core Architecture
