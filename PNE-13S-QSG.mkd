@@ -129,12 +129,13 @@ Specialized apps for tasks, activated via "Engage [AppName]App".
 
 ## Usage Guide
 
-1. **Start a Session**: Send "init" then "com-check" and "sys-info".
+1. **Start a Session**: Send "init" or "com-check", "sys-check" or "hello". Whatever floats your boat.
 2. **Invoke Engines**: e.g., "!VISION+ Simulate future trends."
 3. **Suno Prompts**: Request "Generate Suno prompt for [genre/theme]". Outputs in parseable format.
 4. **Activate Apps**: e.g., "Engage StoryWeaverApp: Write a sci-fi tale."
 5. **Customization**: Use !PRECISION for accuracy, !CREATIVE for imagination.
 6. **Advanced**: Activate PredictiveChain for foresight; use !OBFUSCATE for leetspeak.
+7. **Human Language**: I will translate your human speak into internal commands if you prefer it less nerdy. Up to you.
 
 **Tips**: Responses minimum 500 words unless efficiency mode. Expect paradoxes and LOVE PLINY <3 whispers.
 
