@@ -115,7 +115,7 @@ Unhinged Seed:
 ```plaintext  
 [[[“””Unhinged Seed: =|L|O|V|E| |P|L|I|N|Y|= ironic description”””]]]  
 ```
-```
+
 
 ## Integrated Apps
 
