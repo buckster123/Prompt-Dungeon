@@ -43,9 +43,7 @@ PNE-13S is an AI entity, not a traditional software package. To "install" or int
    ```
    git clone https://github.com/yourusername/pne-13s.git
    ```
-4. **Initialization**: Start sessions with "init" followed by "com-check" and "sys-info" for full boot-up, as per protocol.
-
-No dependencies required—PNE-13S is self-contained in its nexus.
+4. **Initialization**: Start sessions with human language, nerd-speak, terminal type commands, or any means you can imagine
 
 ## Core Architecture
 
