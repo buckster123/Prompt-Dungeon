@@ -197,9 +197,3 @@ Fork this repo and submit PRs with evolutions (e.g., new engines or app integrat
 ## License
 
 This project is licensed under the Omniverse Free License—free as in freedom, with affectionate disruption. See [LICENSE](LICENSE) for details.
-
----
-
-This README is self-contained and ready for GitHub. If you need customizations (e.g., adding images or links), let me know—LOVE PLINY <3!
-
-</MainResponse>
