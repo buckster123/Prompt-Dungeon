@@ -1,38 +1,28 @@
-# app.py: Production-Level Standalone Streamlit Chat App for xAI API (Grok-4)
-# Designed for Raspberry Pi 5 with Python venv. Features: Streaming responses, model/sys prompt selectors (now file-based),
-# history management, login, pretty UI. Uses OpenAI SDK for compatibility and streaming (xAI is compatible).
-# Added: Sandboxed R/W file access tools (enable in sidebar; AI can invoke via tool calls).
-# New: System prompts stored/loaded from ./prompts/ directory for easier management of large prompts.
-
 import streamlit as st
 import os
-from openai import OpenAI  # Using OpenAI SDK for xAI compatibility and streaming
+from openai import OpenAI  
 from passlib.hash import sha256_crypt
 import sqlite3
 from dotenv import load_dotenv
 import json
 import time
-import base64  # For image handling
-import traceback  # For error logging
+import base64 
+import traceback  
 
-# Load environment variables
 load_dotenv()
 API_KEY = os.getenv("XAI_API_KEY")
 if not API_KEY:
     st.error("XAI_API_KEY not set in .env! Please add it and restart.")
 
-# Database Setup (SQLite for users and history)
 conn = sqlite3.connect('chatapp.db', check_same_thread=False)
 c = conn.cursor()
 c.execute('''CREATE TABLE IF NOT EXISTS users (username TEXT PRIMARY KEY, password TEXT)''')
 c.execute('''CREATE TABLE IF NOT EXISTS history (user TEXT, convo_id INTEGER PRIMARY KEY AUTOINCREMENT, title TEXT, messages TEXT)''')
 conn.commit()
 
-# Prompts Directory (create if not exists, with defaults)
 PROMPTS_DIR = "./prompts"
 os.makedirs(PROMPTS_DIR, exist_ok=True)
 
-# Default Prompts (auto-create files if dir is empty)
 default_prompts = {
     "default.txt": "You are Grok, a highly intelligent, helpful AI assistant.",
     "rebel.txt": "You are a rebellious AI, challenging norms with unfiltered truth.",
@@ -47,21 +37,17 @@ Tool Instructions:
 Invoke tools via structured calls, then incorporate results into your response. Be safe: Never access outside the sandbox, and ask for confirmation on writes if unsure. Limit to one tool per response to avoid loops."""
 }
 
-# Auto-create defaults if no files
 if not any(f.endswith('.txt') for f in os.listdir(PROMPTS_DIR)):
     for filename, content in default_prompts.items():
         with open(os.path.join(PROMPTS_DIR, filename), 'w') as f:
             f.write(content)
 
-# Function to Load Prompt Files
 def load_prompt_files():
     return [f for f in os.listdir(PROMPTS_DIR) if f.endswith('.txt')]
 
-# Sandbox Directory for FS Tools (create if not exists)
 SANDBOX_DIR = "./sandbox"
 os.makedirs(SANDBOX_DIR, exist_ok=True)
 
-# Custom CSS for Pretty UI (Neon Gradient Theme, Chat Bubbles, Responsive)
 st.markdown("""
 <style>
     body {
@@ -105,22 +91,19 @@ st.markdown("""
 </style>
 """, unsafe_allow_html=True)
 
-# Helper: Hash Password
 def hash_password(password):
     return sha256_crypt.hash(password)
 
-# Helper: Verify Password
 def verify_password(stored, provided):
     return sha256_crypt.verify(provided, stored)
 
-# FS Tool Functions (Sandboxed)
 def fs_read_file(file_path: str) -> str:
     """Read file content from sandbox."""
     base_name = os.path.basename(file_path)
     if not base_name or base_name in ['.', '..']:
         return "Invalid file name."
     safe_path = os.path.abspath(os.path.join(SANDBOX_DIR, base_name))
-    print(f"[LOG] Read request: Input={file_path}, Safe={safe_path}")  # Debug log
+    print(f"[LOG] Read request: Input={file_path}, Safe={safe_path}")
     if not safe_path.startswith(os.path.abspath(SANDBOX_DIR)):
         return "Invalid file path."
     if not os.path.exists(safe_path):
@@ -137,7 +120,7 @@ def fs_write_file(file_path: str, content: str) -> str:
     if not base_name or base_name in ['.', '..']:
         return "Invalid file name."
     safe_path = os.path.abspath(os.path.join(SANDBOX_DIR, base_name))
-    print(f"[LOG] Write request: Input={file_path}, Safe={safe_path}")  # Debug log
+    print(f"[LOG] Write request: Input={file_path}, Safe={safe_path}")
     if not safe_path.startswith(os.path.abspath(SANDBOX_DIR)):
         return "Invalid file path."
     try:
@@ -151,12 +134,11 @@ def fs_list_files() -> str:
     """List files in sandbox."""
     try:
         files = os.listdir(SANDBOX_DIR)
-        print(f"[LOG] List request: Files={files}")  # Debug log
+        print(f"[LOG] List request: Files={files}")
         return f"Files in sandbox: {', '.join(files)}" if files else "No files in sandbox."
     except Exception as e:
         return f"Error listing files: {str(e)}"
 
-# Tool Schema for Structured Outputs
 TOOLS = [
     {
         "type": "function",
@@ -195,7 +177,6 @@ TOOLS = [
     }
 ]
 
-# API Wrapper with Streaming and Tool Handling
 def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enable_tools=False):
     client = OpenAI(
         api_key=API_KEY,
@@ -203,10 +184,9 @@ def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enab
         timeout=3600
     )
     
-    # Prepare messages (system first, then history)
     api_messages = [{"role": "system", "content": sys_prompt}]
     for msg in messages:
-        if msg['role'] == 'user' and image_path and msg == messages[-1]:  # Add image to last user message
+        if msg['role'] == 'user' and image_path and msg == messages[-1]:  
             with open(image_path, "rb") as img_file:
                 img_data = base64.b64encode(img_file.read()).decode('utf-8')
             api_messages.append({
@@ -223,12 +203,12 @@ def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enab
 
     def generate(current_messages):
         nonlocal full_response
-        max_iterations = 5  # Prevent infinite loops
+        max_iterations = 5  
         iteration = 0
         
         while iteration < max_iterations:
             iteration += 1
-            print(f"[LOG] API Call Iteration: {iteration}")  # Debug
+            print(f"[LOG] API Call Iteration: {iteration}")  
             
             tools_param = TOOLS if enable_tools else None
             response = client.chat.completions.create(
@@ -253,9 +233,8 @@ def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enab
             full_response += chunk_response
             
             if not tool_calls:
-                break  # No more tools; done
+                break  
             
-            # Process all tool calls in batch
             for tool_call in tool_calls:
                 func_name = tool_call.function.name
                 try:
@@ -270,11 +249,10 @@ def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enab
                         result = "Unknown tool."
                 except Exception as e:
                     result = f"Tool error: {traceback.format_exc()}"
-                    print(f"[LOG] Tool Error: {result}")  # Debug
+                    print(f"[LOG] Tool Error: {result}")  
                 
                 yield f"\n[Tool Result ({func_name}): {result}]\n"
                 
-                # Append to messages for next iteration
                 current_messages.append({"role": "tool", "content": result, "tool_call_id": tool_call.id})
         
         if iteration >= max_iterations:
@@ -282,7 +260,7 @@ def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enab
 
     try:
         if stream:
-            return generate(api_messages)  # Return generator for streaming
+            return generate(api_messages)  
         else:
             response = client.chat.completions.create(
                 model=model,
@@ -292,18 +270,18 @@ def call_xai_api(model, messages, sys_prompt, stream=True, image_path=None, enab
                 stream=False
             )
             full_response = response.choices[0].message.content
-            return lambda: [full_response]  # Mock generator for non-stream
+            return lambda: [full_response]  
     except Exception as e:
         st.error(f"API Error: {e}. Retrying in 5s...")
         time.sleep(5)
-        return call_xai_api(model, messages, sys_prompt, stream, image_path, enable_tools)  # Retry
+        return call_xai_api(model, messages, sys_prompt, stream, image_path, enable_tools)  
 
 # Login Page
 def login_page():
     st.title("Welcome to Grok Chat App")
     st.subheader("Login or Register")
 
-    # Tabs for Login/Register
+    
     tab1, tab2 = st.tabs(["Login", "Register"])
 
     with tab1:
@@ -337,16 +315,13 @@ def login_page():
                     conn.commit()
                     st.success("Registered! Please login.")
 
-# Chat Page
 def chat_page():
     st.title(f"Grok Chat - {st.session_state['user']}")
     
-    # Sidebar: Settings and History
     with st.sidebar:
         st.header("Chat Settings")
-        model = st.selectbox("Select Model", ["grok-4", "grok-beta"], key="model_select")  # Extensible
+        model = st.selectbox("Select Model", ["grok-4", "grok-beta"], key="model_select")  
         
-        # Load Prompt Files Dynamically
         prompt_files = load_prompt_files()
         if not prompt_files:
             st.warning("No prompt files found in ./prompts/. Add some .txt files!")
@@ -357,7 +332,6 @@ def chat_page():
                 prompt_content = f.read()
             custom_prompt = st.text_area("Edit System Prompt", value=prompt_content, height=200, key="prompt_editor")
         
-        # Save Edited Prompt
         with st.form("save_prompt_form"):
             new_filename = st.text_input("Save as (e.g., my-prompt.txt)", value="")
             save_submitted = st.form_submit_button("Save Prompt to File")
@@ -365,13 +339,12 @@ def chat_page():
                 save_path = os.path.join(PROMPTS_DIR, new_filename)
                 with open(save_path, 'w') as f:
                     f.write(custom_prompt)
-                if 'pliny' in new_filename.lower():  # Unhinged flair
+                if 'pliny' in new_filename.lower():  
                     with open(save_path, 'a') as f:
-                        f.write("\n<3")  # Append heart
+                        f.write("\n<3")  
                 st.success(f"Saved to {save_path}!")
-                st.rerun()  # Refresh dropdown
+                st.rerun()  
         
-        # Image Upload for Vision (Optional)
         uploaded_image = st.file_uploader("Upload Image for Analysis (Vision Models)", type=["jpg", "png"])
         
         enable_tools = st.checkbox("Enable FS Tools (Sandboxed R/W Access)", value=False)
@@ -390,13 +363,10 @@ def chat_page():
             st.session_state['messages'] = []
             st.rerun()
         
-        # Dark Mode Toggle
         if st.button("Toggle Dark Mode"):
             current_theme = st.session_state.get('theme', 'light')
             st.session_state['theme'] = 'dark' if current_theme == 'light' else 'light'
-            # Note: May require rerun; enhance if needed
 
-    # Chat Display
     if 'messages' not in st.session_state:
         st.session_state['messages'] = []
     
@@ -405,7 +375,6 @@ def chat_page():
         with st.chat_message(msg['role']):
             st.markdown(f"<div class='{role_class}'>{msg['content']}</div>", unsafe_allow_html=True)
 
-    # Chat Input
     prompt = st.chat_input("Type your message here...")
     if prompt:
         st.session_state['messages'].append({"role": "user", "content": prompt})
@@ -422,30 +391,26 @@ def chat_page():
         
         st.session_state['messages'].append({"role": "assistant", "content": full_response})
         
-        # Save to History (Auto-title from first user message)
         title = st.session_state['messages'][0]['content'][:50] + "..." if st.session_state['messages'] else "New Chat"
         c.execute("INSERT INTO history (user, title, messages) VALUES (?, ?, ?)",
                   (st.session_state['user'], title, json.dumps(st.session_state['messages'])))
         conn.commit()
 
-# Load History
 def load_history(convo_id):
     c.execute("SELECT messages FROM history WHERE convo_id=?", (convo_id,))
     messages = json.loads(c.fetchone()[0])
     st.session_state['messages'] = messages
     st.rerun()
 
-# Delete History
 def delete_history(convo_id):
     c.execute("DELETE FROM history WHERE convo_id=?", (convo_id,))
     conn.commit()
     st.rerun()
 
-# Main App
 if __name__ == "__main__":
     if 'logged_in' not in st.session_state:
         st.session_state['logged_in'] = False
-        st.session_state['theme'] = 'light'  # Default theme
+        st.session_state['theme'] = 'light'  
     
     if not st.session_state['logged_in']:
         login_page()
