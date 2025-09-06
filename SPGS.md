@@ -11,10 +11,15 @@ Example Structure:
 ```
 lyrics
 [lyrics content]
+[lyrics content]
+[lyrics content]
+
 ```
 
 ```
 styles
+[styles content]
+[styles content]
 [styles content]
 ```
 
