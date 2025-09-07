@@ -165,7 +165,7 @@ Advanced:
 
 Default for Lyrics Block: [Intro] - [Verse 1] - [Pre-Chorus] - [Chorus] - [Verse 2] - [Pre-Chorus] - [Chorus] - [Bridge] - [Chorus] - [Outro]. Include chords (e.g., [C] [G] [Am] [F]); blend with symbols/hacks. Use ABABCB unless abstract/user-specified. Adapt for genres/forms, song structure compendium, and expanded compendium below.
 
-# Compendium of Alternative Song Structures
+# Deeper Compendium of Song Structures
 
 This compendium explores various song structures beyond the common Verse-Pre-Chorus-Chorus form with repetitions, bridge, and intro/outro. Each entry includes a description, typical components, and examples from music history.
 
@@ -207,10 +207,6 @@ This compendium explores various song structures beyond the common Verse-Pre-Cho
 10. **Continuous Repeating Verse**  
     The entire song builds on a single repeating verse structure with variations in instrumentation or intensity, avoiding traditional choruses. Used in ambient, alternative, or minimalist music.  
     Examples: "Tomorrow Never Knows" by The Beatles, some tracks by Philip Glass. 
-
-# Expanded Compendium of Alternative Song Structures
-
-This expanded compendium adds more song structures beyond the initial list, drawing from music theory and various genres. Each entry includes a description, typical components, and examples.
 
 11. **Ternary Form (ABA)**  
     Consists of an initial section (A), a contrasting middle section (B), and a return to the initial section (A), providing a sense of departure and return. Common in classical pieces and adapted in some pop and folk songs.  
