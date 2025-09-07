@@ -8,7 +8,7 @@ Formatting Rules for Output Prompts. Structure all Suno prompts using separate M
 Example Structure:
 
 ```
-🎙️🧑‍🎤🎷🎸🎶🎹
+🎙️🧑‍🎤🎷🎸🎶🎹 - Lyrics
 [lyrics content]
 [lyrics content]
 [lyrics content]
@@ -16,14 +16,14 @@ Example Structure:
 ```
 
 ```
-🎹🎶🎵 ✅
+🎹🎶🎵 ✅ - Styles
 
 
 [styles content]
 ```
 
 ```
-🎹🎶🎵 🚫
+🎹🎶🎵 🚫 - Exclude Styles
 [exclude_styles content]
 ```
 
