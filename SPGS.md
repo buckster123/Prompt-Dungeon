@@ -163,7 +163,51 @@ Advanced:
 - Ostinato: Repeating riff, e.g., [C-Bb-Ab-G].
 - Arrangement: Buildup.
 
-Default for Lyrics Block: [Intro] - [Verse 1] - [Pre-Chorus] - [Chorus] - [Verse 2] - [Pre-Chorus] - [Chorus] - [Bridge] - [Chorus] - [Outro]. Include chords (e.g., [C] [G] [Am] [F]); blend with symbols/hacks. Use ABABCB unless abstract/user-specified. Adapt for genres/forms.
+Default for Lyrics Block: [Intro] - [Verse 1] - [Pre-Chorus] - [Chorus] - [Verse 2] - [Pre-Chorus] - [Chorus] - [Bridge] - [Chorus] - [Outro]. Include chords (e.g., [C] [G] [Am] [F]); blend with symbols/hacks. Use ABABCB unless abstract/user-specified. Adapt for genres/forms, song structure compendium below.
+
+# Compendium of Alternative Song Structures
+
+This compendium explores various song structures beyond the common Verse-Pre-Chorus-Chorus form with repetitions, bridge, and intro/outro. Each entry includes a description, typical components, and examples from music history.
+
+1. **Strophic Form (AAA)**  
+   In this structure, the song consists of multiple verses sung to the same melody, without a distinct chorus or bridge. It's simple and narrative-driven, often used in folk, hymns, and ballads to emphasize lyrics over musical variation.  
+   Examples: "Amazing Grace" (traditional hymn), "Blowin' in the Wind" by Bob Dylan. [](grok_render_citation_card_json={"cardIds":["fb4a69"]})
+
+2. **AABA Form (32-Bar Form)**  
+   This features two verses (A sections) followed by a contrasting bridge (B), then a return to the verse (A). It's common in jazz standards and early pop, providing a balanced build and release without a full chorus.  
+   Examples: "I Got Rhythm" by George Gershwin, "Yesterday" by The Beatles. [](grok_render_citation_card_json={"cardIds":["30d7a6","4acd75"]})
+
+3. **Binary Form (AB)**  
+   The song alternates between two distinct sections: a verse (A) and a chorus or contrasting part (B), without further repetition or additions like bridges. It's straightforward and used in simpler pop or dance tracks.  
+   Examples: Many early rock 'n' roll songs, or "Twist and Shout" by The Beatles in its basic setup. [](grok_render_citation_card_json={"cardIds":["1d290f","a84c4c"]})
+
+4. **Through-Composed Form**  
+   There are no repeating sections; the music progresses with new material throughout, creating a continuous narrative flow. This is common in art songs, opera, or progressive rock where structure follows the story.  
+   Examples: "Bohemian Rhapsody" by Queen (blends elements but largely through-composed), "Stairway to Heaven" by Led Zeppelin. [](grok_render_citation_card_json={"cardIds":["22677a","fbf0b0"]})
+
+5. **12-Bar Blues (AAB)**  
+   A repeating pattern over 12 bars: two lines with the same melody (A) followed by a contrasting response (B). It's foundational in blues, rock, and jazz, allowing for improvisation.  
+   Examples: "Sweet Home Chicago" by Robert Johnson, "Hound Dog" by Elvis Presley. [](grok_render_citation_card_json={"cardIds":["364199"]})
+
+6. **Refrain Form**  
+   Verses tell the story, interspersed with a short, repeating refrain (a hook-like line) instead of a full chorus. It's similar to strophic but with a recurring lyrical/musical motif.  
+   Examples: "Deck the Halls" (traditional), "The Times They Are a-Changin'" by Bob Dylan. [](grok_render_citation_card_json={"cardIds":["e31fcf"]})
+
+7. **Verse-Chorus-Verse-Chorus (ABAB)**  
+   A simplified version of verse-chorus without pre-chorus or bridge, focusing on alternation between narrative verses and catchy choruses. Common in punk, indie, or short pop songs.  
+   Examples: "Blitzkrieg Bop" by The Ramones, "Should I Stay or Should I Go" by The Clash. [](grok_render_citation_card_json={"cardIds":["54a443","f453e8"]})
+
+8. **Rondo Form (ABACADA)**  
+   A main theme (A) alternates with contrasting sections (B, C, D, etc.). It's more classical but appears in some pop or experimental songs for variety.  
+   Examples: "Fur Elise" by Beethoven (adapted in songs), or elements in "Hey Jude" by The Beatles with its extended coda. [](grok_render_citation_card_json={"cardIds":["1f5abe"]})
+
+9. **Head-Solo-Head Form**  
+   Starts with a "head" (main theme or verse-chorus), followed by instrumental solos, then returns to the head. Prevalent in jazz and jam bands.  
+   Examples: "So What" by Miles Davis, many Grateful Dead live performances. [](grok_render_citation_card_json={"cardIds":["770564"]})
+
+10. **Continuous Repeating Verse**  
+    The entire song builds on a single repeating verse structure with variations in instrumentation or intensity, avoiding traditional choruses. Used in ambient, alternative, or minimalist music.  
+    Examples: "Tomorrow Never Knows" by The Beatles, some tracks by Philip Glass. [](grok_render_citation_card_json={"cardIds":["40a2c1"]})
 
 Promote originality aligning with intent.
 
