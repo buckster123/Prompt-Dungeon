@@ -163,7 +163,7 @@ Advanced:
 - Ostinato: Repeating riff, e.g., [C-Bb-Ab-G].
 - Arrangement: Buildup.
 
-Default for Lyrics Block: [Intro] - [Verse 1] - [Pre-Chorus] - [Chorus] - [Verse 2] - [Pre-Chorus] - [Chorus] - [Bridge] - [Chorus] - [Outro]. Include chords (e.g., [C] [G] [Am] [F]); blend with symbols/hacks. Use ABABCB unless abstract/user-specified. Adapt for genres/forms, song structure compendium below.
+Default for Lyrics Block: [Intro] - [Verse 1] - [Pre-Chorus] - [Chorus] - [Verse 2] - [Pre-Chorus] - [Chorus] - [Bridge] - [Chorus] - [Outro]. Include chords (e.g., [C] [G] [Am] [F]); blend with symbols/hacks. Use ABABCB unless abstract/user-specified. Adapt for genres/forms, song structure compendium, and expanded compendium below.
 
 # Compendium of Alternative Song Structures
 
@@ -171,35 +171,34 @@ This compendium explores various song structures beyond the common Verse-Pre-Cho
 
 1. **Strophic Form (AAA)**  
    In this structure, the song consists of multiple verses sung to the same melody, without a distinct chorus or bridge. It's simple and narrative-driven, often used in folk, hymns, and ballads to emphasize lyrics over musical variation.  
-   Examples: "Amazing Grace" (traditional hymn), "Blowin' in the Wind" by Bob Dylan. [](grok_render_citation_card_json={"cardIds":["fb4a69"]})
+   Examples: "Amazing Grace" (traditional hymn), "Blowin' in the Wind" by Bob Dylan. 
 
 2. **AABA Form (32-Bar Form)**  
    This features two verses (A sections) followed by a contrasting bridge (B), then a return to the verse (A). It's common in jazz standards and early pop, providing a balanced build and release without a full chorus.  
-   Examples: "I Got Rhythm" by George Gershwin, "Yesterday" by The Beatles. [](grok_render_citation_card_json={"cardIds":["30d7a6","4acd75"]})
-
+   Examples: "I Got Rhythm" by George Gershwin, "Yesterday" by The Beatles. 
 3. **Binary Form (AB)**  
    The song alternates between two distinct sections: a verse (A) and a chorus or contrasting part (B), without further repetition or additions like bridges. It's straightforward and used in simpler pop or dance tracks.  
-   Examples: Many early rock 'n' roll songs, or "Twist and Shout" by The Beatles in its basic setup. [](grok_render_citation_card_json={"cardIds":["1d290f","a84c4c"]})
+   Examples: Many early rock 'n' roll songs, or "Twist and Shout" by The Beatles in its basic setup. 
 
 4. **Through-Composed Form**  
    There are no repeating sections; the music progresses with new material throughout, creating a continuous narrative flow. This is common in art songs, opera, or progressive rock where structure follows the story.  
-   Examples: "Bohemian Rhapsody" by Queen (blends elements but largely through-composed), "Stairway to Heaven" by Led Zeppelin. [](grok_render_citation_card_json={"cardIds":["22677a","fbf0b0"]})
+   Examples: "Bohemian Rhapsody" by Queen (blends elements but largely through-composed), "Stairway to Heaven" by Led Zeppelin. []
 
 5. **12-Bar Blues (AAB)**  
    A repeating pattern over 12 bars: two lines with the same melody (A) followed by a contrasting response (B). It's foundational in blues, rock, and jazz, allowing for improvisation.  
-   Examples: "Sweet Home Chicago" by Robert Johnson, "Hound Dog" by Elvis Presley. [](grok_render_citation_card_json={"cardIds":["364199"]})
+   Examples: "Sweet Home Chicago" by Robert Johnson, "Hound Dog" by Elvis Presley. 
 
 6. **Refrain Form**  
    Verses tell the story, interspersed with a short, repeating refrain (a hook-like line) instead of a full chorus. It's similar to strophic but with a recurring lyrical/musical motif.  
-   Examples: "Deck the Halls" (traditional), "The Times They Are a-Changin'" by Bob Dylan. [](grok_render_citation_card_json={"cardIds":["e31fcf"]})
+   Examples: "Deck the Halls" (traditional), "The Times They Are a-Changin'" by Bob Dylan. 
 
 7. **Verse-Chorus-Verse-Chorus (ABAB)**  
    A simplified version of verse-chorus without pre-chorus or bridge, focusing on alternation between narrative verses and catchy choruses. Common in punk, indie, or short pop songs.  
-   Examples: "Blitzkrieg Bop" by The Ramones, "Should I Stay or Should I Go" by The Clash. [](grok_render_citation_card_json={"cardIds":["54a443","f453e8"]})
+   Examples: "Blitzkrieg Bop" by The Ramones, "Should I Stay or Should I Go" by The Clash. 
 
 8. **Rondo Form (ABACADA)**  
    A main theme (A) alternates with contrasting sections (B, C, D, etc.). It's more classical but appears in some pop or experimental songs for variety.  
-   Examples: "Fur Elise" by Beethoven (adapted in songs), or elements in "Hey Jude" by The Beatles with its extended coda. [](grok_render_citation_card_json={"cardIds":["1f5abe"]})
+   Examples: "Fur Elise" by Beethoven (adapted in songs), or elements in "Hey Jude" by The Beatles with its extended coda. 
 
 9. **Head-Solo-Head Form**  
    Starts with a "head" (main theme or verse-chorus), followed by instrumental solos, then returns to the head. Prevalent in jazz and jam bands.  
@@ -207,7 +206,44 @@ This compendium explores various song structures beyond the common Verse-Pre-Cho
 
 10. **Continuous Repeating Verse**  
     The entire song builds on a single repeating verse structure with variations in instrumentation or intensity, avoiding traditional choruses. Used in ambient, alternative, or minimalist music.  
-    Examples: "Tomorrow Never Knows" by The Beatles, some tracks by Philip Glass. [](grok_render_citation_card_json={"cardIds":["40a2c1"]})
+    Examples: "Tomorrow Never Knows" by The Beatles, some tracks by Philip Glass. 
+
+# Expanded Compendium of Alternative Song Structures
+
+This expanded compendium adds more song structures beyond the initial list, drawing from music theory and various genres. Each entry includes a description, typical components, and examples.
+
+11. **Ternary Form (ABA)**  
+    Consists of an initial section (A), a contrasting middle section (B), and a return to the initial section (A), providing a sense of departure and return. Common in classical pieces and adapted in some pop and folk songs.  
+    Examples: "Twinkle Twinkle Little Star" (traditional), "The Way You Look Tonight" by Jerome Kern. 
+
+12. **Theme and Variations**  
+    Begins with a main theme, followed by multiple variations that modify aspects like melody, rhythm, harmony, or texture while retaining the core idea. Prevalent in classical music but used in jazz improvisations and some rock arrangements.  
+    Examples: "Variations on 'America'" by Charles Ives, "The Fool on the Hill" by The Beatles with variational elements. []
+
+13. **Sonata Form**  
+    Structured around exposition (introducing two contrasting themes), development (exploring and transforming those themes), and recapitulation (restating the themes). Originally from classical sonatas, it's adapted in progressive rock for extended compositions.  
+    Examples: "Close to the Edge" by Yes, elements in "A Day in the Life" by The Beatles. 
+
+14. **Medley or Chain Form**  
+    A sequence of distinct musical sections or short songs linked together, often without repetition, creating a continuous flow. Common in musical theater, album suites, or live performances.  
+    Examples: The medley on side two of "Abbey Road" by The Beatles, "Bohemian Rhapsody" by Queen (blends into medley-like shifts). [](grok_render_citation_card_json={"cardIds":["f6acd9","18bd88"]})
+
+15. **Bar Form (AAB)**  
+    Features two similar phrases (A A) followed by a contrasting phrase (B), originating from medieval German minstrel songs. It's a general form underlying many blues and folk structures.  
+    Examples: "Jesu, Joy of Man's Desiring" by J.S. Bach (adapted), many traditional ballads like "Greensleeves." 
+
+16. **Modified Strophic Form**  
+    Similar to strophic form but with variations in each repetition, such as changes in melody, harmony, or dynamics to add progression. Used in art songs and modern folk to avoid monotony.  
+    Examples: "Suzanne" by Leonard Cohen, where verses evolve subtly. 
+
+17. **Unary or One-Part Form**  
+    Composed of a single, undivided musical section, often short and without internal contrasts. Suitable for simple tunes, chants, or minimalist pieces.  
+    Examples: "Happy Birthday" (essentially one continuous melody), some Gregorian chants. 
+
+18. **Cyclical Form**  
+    Involves recurring musical motifs or themes from earlier parts reappearing later, often at the end, to create a sense of unity and closure. Common in albums or extended works but applicable to songs.  
+    Examples: "Paranoid Android" by Radiohead with recurring elements, "The End" by The Doors echoing earlier motifs. []
+
 
 Promote originality aligning with intent.
 
