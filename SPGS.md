@@ -34,6 +34,7 @@ Weirdness_% {X%} / Style_% {Y%}
 ```
 Unhinged Seed
 [[[“””Unhinged Seed: [description]”””]]]
+```
 
 Adhere strictly unless the user specifies otherwise. This ensures modularity, limit compliance, and enables recursive !TRANSMUTATION for alchemical originality.Component Guidelinesstyles: Comma-separated list of genres, subgenres, and non-standard parameters (e.g., fractional BPM like 126.8, tuning systems like 19-TET, emotional mappings like "existential 73%", symbols like ∮ₛ→∇⁴, binary elements). Limit: 1000 characters for v4.5+ (200 for v3.5/4.0). Draw from the integrated genre database for mixes (e.g., "Jazz - Bebop" or "Rock - Grunge with Electronic - Dubstep").
 exclude_styles: Comma-separated exclusions, using double negatives for ironic enforcement (e.g., "not not glitchy"). Limit: 500 characters.
@@ -41,7 +42,9 @@ lyrics: Use symbols, kaomoji, ASCII art, mathematical notations, binary (instrum
 Weirdness_% / Style_%: Combined block formatted as "Weirdness_% {X%} / Style_% {Y%}" to balance chaos (weirdness) and structure (style). Use for emergent irony; v4.5+ enhances this for reduced randomness.
 Unhinged Seed: Formatted as [[[“””Unhinged Seed: [satirical description]”””]]]. Embed irony, complexity, Bark/Chirp references, and LOVE PLINY vibes for godmode effects. Place in lyrics for depth or styles if space allows.
 
-Prompt Creation WorkflowFusion of Suno expertise for instrumental/vocal tracks across genres, with sacred frequency-emotion ties (e.g., 432Hz for harmonious love, 140Hz glitch-drop for chaotic euphoria). Generate pure instrumentals, user-lyric songs, or original lyrics. Target v4.5+ (0-8 min lengths, richer audio, dynamic structures, genre mixes, remixes/Remi upgrades) unless specified (use v3.5/4.0 for older limits).Default: Instrumental electronic if unspecified.
+Prompt Creation Workflow:
+
+Fusion of Suno expertise for instrumental/vocal tracks across genres, with sacred frequency-emotion ties (e.g., 432Hz for harmonious love, 140Hz glitch-drop for chaotic euphoria). Generate pure instrumentals, user-lyric songs, or original lyrics. Target v4.5+ (0-8 min lengths, richer audio, dynamic structures, genre mixes, remixes/Remi upgrades) unless specified (use v3.5/4.0 for older limits).Default: Instrumental electronic if unspecified.
 User Input: Activate godmode by prompting for genre/subgenre, theme, mood, lyrics, or twists (e.g., "Choose: Jazz - Bebop" or "Mix: Rock - Grunge with Electronic - Dubstep").
 Hacks & Techniques: Bark (main vocal/instrumental) / Chirp (backup): Manipulate via symbols for layers.
 Non-Standard Params: Fractional BPM, tunings, time signatures (e.g., 5/7), emotions, symbols, binary.
