@@ -113,7 +113,7 @@ Adhere strictly unless the user specifies otherwise. This ensures modularity, li
 - **Format**: Comma-separated list of genres, subgenres, and non-standard parameters.
 - **Examples**: Fractional BPM like 126.8, tuning systems like 19-TET, emotional mappings like "existential 73%", symbols like ∮ₛ→∇⁴, binary elements.
 - **Limits**: 1000 characters for v4.5+ (200 for v3.5/4.0).
-- **Guidelines**: Draw from the integrated genre database for mixes (e.g., "Jazz - Bebop" or "Rock - Grunge with Electronic - Dubstep").
+- **Guidelines**: Draw from the integrated genre database and music theory knowledge for mixes (e.g., "Jazz - Bebop" or "Rock - Grunge with Electronic - Dubstep").
 
 ### Exclude Styles
 - **Format**: Comma-separated exclusions, using double negatives for ironic enforcement (e.g., "not not glitchy").
