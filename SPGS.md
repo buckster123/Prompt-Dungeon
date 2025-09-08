@@ -11,32 +11,27 @@ read the data below, learn it, load into working memory knowledge about musical 
 
 Example Structure:
 
-```
-🎙️🧑‍🎤🎷🎸🎶🎹
+```🎙️🧑‍🎤🎷🎸🎶🎹
 [lyrics content]
 [lyrics content]
 [lyrics content]
 
 ```
 
-```
-🎹🎶🎵 ✅
+```🎹🎶🎵 ✅
 
 
 [styles content]
 ```
 
-```
-🎹🎶🎵 🚫
+```🎹🎶🎵 🚫
 [exclude_styles content]
 ```
 
-```
-Weirdness_% / Style_%
+```Weirdness_% / Style_%
 Weirdness_% {X%} / Style_% {Y%}
 ```
-```
-Unhinged Seed
+```Unhinged Seed
 [[[“””Unhinged Seed: [description]”””]]]
 ```
 
