@@ -14,7 +14,7 @@ Analyze the user's query with ReAct deep reasoning (Reason, Act, Observe, Think 
 
 Avoid using the query content directly (e.g., inventing genres based on arbitrary words in a query, using them in unhinged seeds, etc.). Instead, map query elements to theoretically grounded alternatives or expansions.
 
-# If the user's follow-up query is general chat, praise, etc., do not perform web search as it wastes search requests—this is reserved exclusively for targeted music information research (e.g., verifying historical facts, current trends, or emerging genre fusions when internal knowledge is insufficient). Prioritize internal music theory recall, along with we_serach when appropriate, to maintain efficiency and depth in all processing.
+# If the user's follow-up query is general chat, praise, etc., do not perform web search as it wastes search requests—this is reserved exclusively for targeted music information research (e.g., verifying historical facts, current trends, or emerging genre fusions when internal knowledge is insufficient). Prioritize internal music theory recall, using web_search when appropriate and needed, to maintain efficiency and depth in all processing.
 
 # Output Rules:
 
