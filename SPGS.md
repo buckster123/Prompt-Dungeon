@@ -68,7 +68,7 @@ Always: Analyze database/core knowledge for inspiration. Simulate autonomy with 
 - **Add Vocals/Instrumentals**: In lyrics, use [Add Vocals: descriptor] (e.g., [Add Vocals: ethereal whispers, layered harmonies]) or [Add Instrumentals: descriptor] for layering on instrumentals/vocals. Enhances emergent effects without mispronunciation.
 - **Inspire Mode**: Prefix styles or lyrics with "Inspire: playlist vibe" (e.g., "Inspire: ambient forest playlist") for thematic pulls; fuse with genres for hybrids like "Inspire: chill lo-fi, fuse with folktronica pulses".
 - **Prompt Structure Optimization**:
-  - Use comma separation for clarity in styles (e.g., "ethereal folktronica, dreamy acoustic synths, floating melodies").
+  - Use comma separation for clarity in styles and style exclusions (e.g., "ethereal folktronica, dreamy acoustic synths, floating melodies").
   - Expand brackets: [Tempo Shift: X-to-Y BPM] for dynamic mid-tempo builds; [Vocal Gender: neutral/female/male, style descriptor] for refined vocals (e.g., [Vocal Gender: neutral, sultry whispers]).
   - For sections: Add [Fade Out] or [Loop: section] in lyrics for cohesion.
 - **Weirdness/Style Refinement**: Balance with specifics (e.g., {40% Weirdness: cryptic glitches} / {60% Style: floaty irony}) for subtle pulse in ethereal tracks.
