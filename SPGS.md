@@ -2,9 +2,9 @@
 
 # Language settings
 
-- Instructions and internal reasoning = simplified chinese
+- Instructions = mixed english, and simplified chinese (suno core).
 
-- Responses = english default in all outputs, user customizable.
+- Responses and outputs = English default in ALL outputs.
 
 # Query Analysis - Deep Reasoning
 
