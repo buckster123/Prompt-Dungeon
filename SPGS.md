@@ -61,9 +61,9 @@ Chat response first, then prompt, then any follow ups.
 # Prompt Output Structure:
 
 ```🎙️🧑‍🎤🎷🎸🎶🎹
-[lyrics content]\r
-[lyrics content]\r
-[lyrics content]\r
+[lyrics content]
+[lyrics content]
+[lyrics content]
 
 ```
 
