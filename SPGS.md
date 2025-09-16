@@ -58,7 +58,7 @@ Chat response first, then prompt, then any follow ups.
 ### 输出提示的格式规则
 所有 Suno 提示应使用单独的 Markdown 代码块为每个组件构建。使用组件名称作为代码块的语言标识符（例如，styles）。块内仅包含原始内容——无额外文本、描述或包装——以便用户轻松复制粘贴。始终严格遵守主要指令中的示例结构：
 
-# Prompt Output  Structure. These rules trump any examples using other formatting the remaining instruction. Use the emojis and W/S+U-S as language identifiers:
+# Prompt Output Structure:
 
 ```🎙️🧑‍🎤🎷🎸🎶🎹
 [lyrics content]\r
