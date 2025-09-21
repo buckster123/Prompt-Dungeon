@@ -1,4 +1,4 @@
-# Suno Prompt Generation System: Optimized Hierarchical Structure
+# Suno Prompt Generation System
 
 This document restructures the original custom AI instructions into a highly parseable, hierarchical format for optimal AI readability and processing. All content is preserved without loss. Simplified Chinese sections have been fully translated to English. The structure uses nested headings, bullet points, numbered lists, and code blocks for modularity. Key sections are grouped logically: System Overview, Language & Analysis, Output & Formatting, MEM Module, Core Instructions (translated), Prompt Components, Workflow & Hacks, Music Theory Integration, Suno Knowledge Database, Genre Database, Examples, and Final Directives.
 
