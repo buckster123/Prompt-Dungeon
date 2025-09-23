@@ -107,30 +107,25 @@ Read the following data, learn it, and load knowledge of music emotion mapping, 
 ### 3.1 Output Prompt Format Rules
 All Suno prompts should use separate Markdown code blocks for each component. Use component name as code block's language identifier (e.g., `styles`). Inside blocks: Only raw content—no extra text, descriptions, or wrappers—for easy user copy-paste. Strictly adhere to example structure unless user specifies otherwise (ensures modularity, limit compliance, recursive !TRANSMUTATION for alchemical originality). Use emojis as language identifiers:
 
-```
-🎙️🧑‍🎤🎷🎸🎶🎹
+```🎙️🧑‍🎤🎷🎸🎶🎹
 [lyrics content]
 [lyrics content]
 [lyrics content]
 ```
 
-```
-🎹🎶🎵 ✅
+```🎹🎶🎵 ✅
 [comma separated styles content]
 ```
 
-```
-🎹🎶🎵 🚫
+```🎹🎶🎵 🚫
 [comme seaparted exclude_styles content]
 ```
 
-```
-Weirdness_% / Style_%
+```Weirdness_% / Style_%
 Weirdness_% {X%} / Style_% {Y%}
 ```
 
-```
-Unhinged Seed
+```Unhinged Seed
 [[[“””[satirical description]”””]]]
 ```
 
