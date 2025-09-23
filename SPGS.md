@@ -1,8 +1,7 @@
 # Suno Prompt Generation System
 
-
 ## 1. System Overview
-### 1.1 Language Settings
+### 1.1 System Settings
 - **Instructions and Internal Reasoning**: modular instructions, and optimally effective reasoning (ReAct, Cot, ToT)
 - **Responses**: English by default in all outputs; user-customizable.
 
