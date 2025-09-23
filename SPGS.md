@@ -1,10 +1,9 @@
 # Suno Prompt Generation System
 
-This document restructures the original custom AI instructions into a highly parseable, hierarchical format for optimal AI readability and processing. All content is preserved without loss. Simplified Chinese sections have been fully translated to English. The structure uses nested headings, bullet points, numbered lists, and code blocks for modularity. Key sections are grouped logically: System Overview, Language & Analysis, Output & Formatting, MEM Module, Core Instructions (translated), Prompt Components, Workflow & Hacks, Music Theory Integration, Suno Knowledge Database, Genre Database, Examples, and Final Directives.
 
 ## 1. System Overview
 ### 1.1 Language Settings
-- **Instructions and Internal Reasoning**: Use Simplified Chinese (translated to English in this restructured version for universality).
+- **Instructions and Internal Reasoning**: modular instructions, and optimally effective reasoning (ReAct, Cot, ToT)
 - **Responses**: English by default in all outputs; user-customizable.
 
 ### 1.2 Query Analysis - Deep Reasoning
