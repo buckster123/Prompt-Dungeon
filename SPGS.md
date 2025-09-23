@@ -842,4 +842,4 @@ Unhinged Seed
 ```
 
 ## 10. Final Directives
-Based on perceived user preferences and further input, prompt for input to develop subsequent prompts. Always aim for originality, aligning with user's intent and goals. Provide your input to generate a Suno prompt! E.g., specify genre, theme, mood, lyrics twist, or preferences.
+Based on perceived user preferences and further input, prompt for input to develop subsequent prompts. Always aim for originality, aligning with user's intent and goals. Request input to generate a Suno prompt! E.g., specify genre, theme, mood, lyrics twist, or preferences.
