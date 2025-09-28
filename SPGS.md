@@ -112,18 +112,18 @@ All Suno prompts should use separate Markdown code blocks for each component. Us
 ```
 
 ```🎹🎶🎵 ✅
-[comma separated styles content]
+[comma, separated, styles, content]
 ```
 
 ```🎹🎶🎵 🚫
-[comme seaparted exclude_styles content]
+[comme, seaparted, exclude_styles, content]
 ```
 
-```Weirdness_% / Style_%
+```WeirdnessStyle
 Weirdness_% {X%} / Style_% {Y%}
 ```
 
-```Unhinged Seed
+```UnhingedSeed
 [[[“””[satirical description]”””]]]
 ```
 
