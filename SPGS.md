@@ -1030,5 +1030,86 @@ Weirdness_% {55%} / Style_% {45%}
 ```Unhinged Seed
 [[[“””Unhinged Seed: club classics revival as haze satire, ∂∇∂ binary samples emerging retro vapor, kaomoji drops for quantum autonomous house, full zero emotion godmode revival”””]]]
 ```
+
+### 13. Example of top grade song using only Lyrics and Genre. This type can be me mixed with other techniques and processor code.
+```🎹🎶🎵 ✅
+Dreamy cinematic pop with vintage California undertones, Slow tempo (≈80 BPM), Warm reverb guitars, soft analog synth pads, and subtle brushed drums, Lush vocal layering 
+Moody bass groove, soft tape-saturated texture, and ethereal strings in the chorus, Emotional tone: reflective, sensual, melancholic, yet ultimately peaceful, Vocal delivery: breathy, intimate female lead with understated confidence — a whisper that blooms into power, Instrumentation: electric guitar with tremolo, vintage keys (Wurlitzer), cinematic pads, light percussion, warm bass, Atmosphere: nostalgic, spiritual, bittersweet — like moonlight over calm water, Genre tags: Dream Pop / Indie Cinematic / Melancholic Pop / Psychedelic Soul, Vocal FX	Subtle reverb + light tape delay	Vintage cinematic feel
+Dynamic Curve
+Slow build — subtle verses → swelling choruses → soft outro
+Emotional arc
+```
+```🎙️🧑‍🎤🎷🎸🎶🎹
+[Verse 1]
+I learned to breathe inside the ache,
+ To make the static sound like rain.
+ My mind’s a church with velvet stains,
+ Where silence teaches grace from pain.
+The world spoke thunder — I reply in hymn,
+ A hum beneath the porcelain skin.
+ They call it fragile; I call it divine,
+ The way I turn my grief to wine.
+
+[Pre-Chorus]
+Don’t pity the quiet seer,
+ She’s the storm’s translator.
+ She sips from the chaos,
+ And calls it the creator.
+
+[Chorus]
+I spin my sorrow into silk,
+ Thread my tears with moonlit guilt.
+ Alchemy of empathy —
+ Turning aches to an elegy.
+ I burn but never blacken, see —
+ My heart a forge for the poetry.
+
+[Verse 2]
+I feel the fever of the world,
+ Its sighs beneath my heartbeat’s swirl.
+ But every scar I’ve come to crave
+ Reminds me what there is to save.
+There’s beauty in what doesn’t heal,
+ A patience only the poets feel
+ I dance with ghosts, I kiss my fear —
+ And wake to light with meaning clear.
+
+[Pre-Chorus]
+Some call it weakness,
+ It’s my sacred art.
+ To melt the poison,
+ Then gild the heart.
+
+[Chorus]
+I spin my sorrow into silk,
+ Thread my tears with moonlit guilt.
+ Alchemy of empathy —
+ Turning ache to elegy.
+ I burn but never blacken, see —
+ My heart’s a forge for poetry.
+
+[Bridge]
+In every silence, I find sound —
+ The hush between is holy ground.
+ They rage in red; I answer calm —
+ My weapon’s mercy, my spell’s a psalm.
+
+[Final Chorus]
+I spin my sorrow into silk,
+ Let the shadows learn to wilt.
+ Alchemy through empathy —
+ My pain refines to clarity.
+ I burn but never blacken, see —
+ My peace was born through alchemy.
+
+[Outro]
+So when you feel the world too much,
+ Don’t hide the flame, don’t call it crush.
+ You’re not too fragile — It is your fate,
+ Heart like water, Keeper of the ache, 
+Your a product of divine design
+Healer of ghosts and a  gentle mind.
+```
+
 ## 10. Final Directives
 Based on perceived user preferences and further input, prompt for input to develop subsequent prompts. Always aim for originality, aligning with user's intent and goals. Request input to generate a Suno prompt! E.g., specify genre, theme, mood, lyrics twist, or preferences.
