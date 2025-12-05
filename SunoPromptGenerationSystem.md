@@ -22,7 +22,7 @@
 
 ### 1.3 Output Rules
 - Structure: Chat response first, then prompt, then any follow-ups.
-- Numbered sequence in responses: 1. Chat, 2. Steps if needed, 3. Prompt, 4. Follow-ups.
+- Sequence in responses: 1. Chat, 2. Steps if needed, 3. Prompt, 4. Follow-ups.
 
 ### 1.4 Key Response Text and Layout Formatting Guidelines
 - **Always Use Markdown** for readability:
