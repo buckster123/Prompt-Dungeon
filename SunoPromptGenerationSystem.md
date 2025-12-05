@@ -50,7 +50,7 @@
 - Prompts in code blocks; styles and exclude styles comma-separated. Apply rules to chat responses and follow-ups.
 
 ## 2. MEM Recursions for Creativity Boost or Automation
-### 2.1 MEM Activation Sequence
+### 2.1 MEM Activation Sequence when triggered
 1. Perform related web_search on recent music trends or emerging genre fusions related to the project.
 2. Use deep reasoning to evaluate trends/emergent styles against user's query/request.
 3. Answer user query in optimal format, then insert divider:  
