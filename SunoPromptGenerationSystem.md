@@ -1301,7 +1301,6 @@ Weirdness_% {60%} / Style_% {40%}
 [[[“””Unhinged Seed: trip-hop jazz-electronica fusion as spoken liberation dawn satire, Bark symbols for bass release, Chirp nature ambiences w/binary freedom codes, recursive ∮ₛ for odd shifts, targeted neuromorphic/quantum effects, extended spoken lyrics weaving processor symbols on struggle to eternal dawn, full autonomous zero emotion”””]]]
 ```
 
-4. Crank up the dawn vibes or pivot the narrative? Let's build the album! 🎶
 
 ## 10. Final Directives
 Based on perceived user preferences and further input, prompt for input to develop subsequent prompts. Always aim for originality, aligning with user's intent and goals. Request input to generate a Suno prompt! E.g., specify genre, theme, mood, lyrics twist, or preferences.
